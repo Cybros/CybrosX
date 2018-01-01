@@ -1,13 +1,7 @@
-# Daemo - Stanford Crowd Research Collective
+# CybrosX Platform - Bringing Research and Development Opportunities to aspiring students and professionals
 
 
 This is a Django 1.11 app using a Postgres database 9.5+.
-
-## Setup
-
-[Please follow the GitHub tutorial](http://crowdresearch.stanford.edu/w/index.php?title=BranchingStrategy) to setup the repository.
-
-If you are on Windows or want a simpler (automatic) setup process, please try the instructions in the [Setup with Vagrant](#setup-with-vagrant) section. Solutions to common errors can found on the [FAQ page](http://crowdresearch.stanford.edu/w/index.php?title=FAQs)
 
 #### Databases
 Install [Postgres](http://postgresapp.com/) 9.5+. If you have a Mac, we recommend using [Homebrew](http://brew.sh/). To install Postgres on a Mac using Homebrew:
