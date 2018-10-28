@@ -125,6 +125,6 @@ function run($http, $rootScope, $state, $location, $window, $websocket, $interva
 
     $window.onbeforeunload = function (evt) {
         $rootScope.closeWebSocket();
-    }
+    };
 
 }

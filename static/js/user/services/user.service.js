@@ -13,7 +13,6 @@
 
 
     function User($http, HttpService) {
-        var baseUrl = HttpService.apiPrefix + '/users/';
         return {
             getProfile: getProfile,
             getPublicProfile: getPublicProfile,
@@ -207,10 +206,6 @@
                 method: 'DELETE'
             };
             return HttpService.doRequest(settings);
-        }
-
-        function getAccessList(type) {
-
         }
 
         function isProfileComplete() {

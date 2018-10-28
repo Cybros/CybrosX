@@ -174,11 +174,6 @@
             controllerAs: 'user'
         };
 
-        var requesterProfile = {
-            templateUrl: '/static/templates/requester/home.html',
-            controller: 'RequesterProfileController'
-        };
-
         var paymentCreditCard = {
             controller: 'PaymentController',
             controllerAs: 'payment',

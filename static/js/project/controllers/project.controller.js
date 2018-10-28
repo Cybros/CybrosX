@@ -462,8 +462,6 @@
 
         var timeouts = {};
 
-        var timeout;
-
         $scope.$watch('project.project', function (newValue, oldValue) {
             if (self.project.status != self.status.STATUS_DRAFT)
                 return;
@@ -1087,7 +1085,6 @@
             if (!validate($event)) return;
 
             self.publishing = true;
-            var publishText = self.resumeButtonText;
             self.resumeButtonText = 'Publishing...';
             Project.publish(self.project.id, {status: self.status.STATUS_IN_PROGRESS}).then(
                 function success(response) {

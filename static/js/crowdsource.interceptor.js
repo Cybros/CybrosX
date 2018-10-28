@@ -15,7 +15,6 @@
     function AuthHttpResponseInterceptor($log, $injector, $q) {
         return {
             responseError: function (rejection) {
-                var $http = $injector.get('$http');
                 var $state = $injector.get('$state');
                 if (rejection.status === 403) {
                     if (rejection.hasOwnProperty('data')

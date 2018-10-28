@@ -106,7 +106,7 @@
             <md-list-item class="md-line-2 layout-row layout-align-start-center"
                           ng-repeat="file in project.project.batch_files">
                 <div class="md-list-item-text">
-                    <div><a class="_file-upload" href="{{ file.file }}" target="_blank" download="" rel="noopener noreferrer">{{ file.name }}</a>
+                    <div><a class="_file-upload" ng-href="{{ file.file }}" target="_blank" download="" rel="noopener noreferrer">{{ file.name }}</a>
                         ({{ file.size }}, {{ file.number_of_rows }} rows)
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                     <div ng-if="project.submittedTasksCount > 0" class="_secondary-text">
                         You have tasks that are submitted but not yet approved. We collect funds to cover these
                         unapproved tasks in case they are returned to the marketplace. <a
-                            href="{{ '/project-review/' + project.project.id }}">Approving
+                            ng-href="{{ '/project-review/' + project.project.id }}">Approving
                         submitted work</a> for this project first will save you money.
                     </div>
                     <br/>

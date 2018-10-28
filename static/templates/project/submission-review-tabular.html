@@ -240,7 +240,7 @@
 
                                 <td ng-repeat="item in task.task_template.template.items" ng-if="item.role=='input'">
                                     <div ng-if="item.type=='file_upload'">
-                                        <a href="{{ item.answer.url }}" target="_blank"
+                                        <a ng-href="{{ item.answer.url }}" target="_blank"
                                            download="" rel="noopener noreferrer">{{ item.answer.name }}</a>
                                     </div>
                                     <div ng-if="item.type!=='file_upload' && item.type!=='checkbox'">
@@ -363,7 +363,7 @@
 
                             <td ng-repeat="item in task.task_template.template.items" ng-if="item.role=='input'">
                                 <div ng-if="item.type=='file_upload'">
-                                    <a href="{{ item.answer.url }}" target="_blank"
+                                    <a ng-href="{{ item.answer.url }}" target="_blank"
                                        download="" rel="noopener noreferrer">{{ item.answer.name }}</a>
                                 </div>
                                 <div ng-if="item.type!=='file_upload'">

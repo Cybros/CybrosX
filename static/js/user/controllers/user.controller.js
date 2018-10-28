@@ -297,7 +297,7 @@
                         });
 
                     if (city !== undefined) {
-                        user.location.city = city.long_name
+                        user.location.city = city.long_name;
                     }
 
                     var country = _.find(result.address_components,

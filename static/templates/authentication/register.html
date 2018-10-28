@@ -25,7 +25,7 @@
     <div layout="row">
         <md-input-container flex="50" class="md-input-has-placeholder">
             <label>Email</label>
-            <input name="email" type="email" required ng-model="register.email" name="email"
+            <input name="email" type="email" required ng-model="register.email"
                    ng-change="form.email.$setValidity('backend', true)">
 
             <div ng-if="form.email.$touched||register.submitted" ng-messages="form.email.$error">

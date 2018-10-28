@@ -50,7 +50,7 @@
 
                 function addParam(url, param, value) {
                     var a = document.createElement('a'), regex = /(?:\?|&amp;|&)+([^=]+)(?:=([^&]*))*/gi;
-                    var params = {}, match, str = [];
+                    var match, str = [];
                     a.href = url;
                     while (match = regex.exec(a.search))
                         if (encodeURIComponent(param) != match[1])

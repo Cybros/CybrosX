@@ -15,7 +15,6 @@
      * @namespace HomeRoutingController
      */
     function HomeRoutingController($scope, $rootScope, $state, Authentication) {
-        var self = this;
 
         $scope.isLoggedIn = Authentication.isAuthenticated();
         $scope.account = Authentication.getAuthenticatedAccount();

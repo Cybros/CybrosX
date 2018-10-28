@@ -92,18 +92,6 @@
                     // return deferred.promise;
                 }
 
-                function getResults(address) {
-                    // var deferred = $q.defer();
-                    // if (address) {
-                    //     PlaceService.getPlacePredictions({input: address}, function (data) {
-                    //         deferred.resolve(data);
-                    //     });
-                    // } else {
-                    //     deferred.resolve('');
-                    // }
-                    // return deferred.promise;
-                }
-
                 function getAddress() {
                     // if (self.addressSearchValue !== "" && self.address_text === null) {
                     //     self.autocompleteError = true;

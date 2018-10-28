@@ -19,8 +19,6 @@
     function TaskFeedController($window, $state, $scope, $mdToast, TaskFeed,
                                 $filter, Authentication, TaskWorker, Project, $rootScope, $stateParams, $mdMedia) {
 
-        var userAccount = Authentication.getAuthenticatedAccount();
-
         var self = this;
         self.sortBy = '-';
         // $scope.screenIsSmall = $mdMedia('sm');
@@ -148,7 +146,6 @@
                         project.show_preview = true;
                     },
                     function error(errData) {
-                        var err = errData[0];
                         $mdToast.showSimple('Error fetching preview.');
                     }
                 ).finally(function () {
