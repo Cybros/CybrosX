@@ -42,6 +42,14 @@
             });
         }
 
+        function updateMessageStatus(status) {
+            if (status) {
+                self.hasNewMessages = status;
+            } else {
+                // TODO: handle logic
+            }
+        }
+
         function getNotifications() {
             User.getNotifications().then(
                 function success(response) {
