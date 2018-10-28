@@ -15,7 +15,6 @@
      * @namespace LoginController
      */
     function LogoutController($window, $location, $state, $stateParams, $scope, $rootScope, Authentication) {
-        var vm = this;
 
         $rootScope.closeWebSocket();
         Authentication.logout();

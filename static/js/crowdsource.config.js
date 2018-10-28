@@ -35,12 +35,6 @@
             "A400": "#404893", "A700": "#141a5f"
         });
 
-        var customYellow = $mdThemingProvider.extendPalette('yellow', {
-            "50": "#fffef3", "100": "#fffbdb", "200": "#fff9c4", "300": "#fff6b0",
-            "400": "#fff49c", "500": "#fff288", "600": "#dfd477", "700": "#bfb666",
-            "800": "#9f9755", "900": "#807944", "A100": "#fffbdb", "A200": "#fff9c4",
-            "A400": "#fff49c", "A700": "#bfb666"
-        });
         var customOrange = $mdThemingProvider.extendPalette('orange', {
             "50": "#fffef3", "100": "#fffbdb", "200": "#fff9c4", "300": "#fff6b0",
             "400": "#fff49c", "500": "#EB7F00", "600": "#dfd477", "700": "#bfb666",

@@ -83,7 +83,6 @@
             });
 
             var field = angular.copy(component);
-            var curId = generateId();
 
             field.name = ''; //'item' + curId;
             field.aux_attributes = item.aux_attributes;
@@ -156,7 +155,6 @@
             }
 
             var field = angular.copy(component);
-            var curId = generateId();
             field.name = ''; //'item' + curId;
             field.isNew = true;
 
@@ -195,11 +193,6 @@
             ).finally(function () {
             });
 
-        }
-
-
-        function generateId() {
-            return '' + ++idGenIndex;
         }
 
 

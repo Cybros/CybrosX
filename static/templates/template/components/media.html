@@ -12,5 +12,5 @@
 </iframe>
 <div ng-if="item.type=='iframe'" class="layout-row layout-align-start-center">
     <div><md-icon md-font-set="material-icons md-16" style="min-height: 16px">open_in_new</md-icon></div>
-    <div style="font-size: small;">Open in a  <a target="_blank" href="{{ instance.getTrustedUrl(item.aux_attributes.src) }}">new tab</a></div>
+    <div style="font-size: small;">Open in a  <a target="_blank" ng-href="{{ instance.getTrustedUrl(item.aux_attributes.src) }}" rel="noopener noreferrer">new tab</a></div>
 </div>

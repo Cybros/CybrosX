@@ -88,7 +88,7 @@
                     $mdToast.showSimple('Could not fetch workers to rate.');
                 }
             ).finally(function () {
-                getWorkerDemographics(self.resolvedData.id);
+                getWorkerDemographics();
                 if (self.resolvedData.is_prototype) {
                     getWorkerFeedback();
                 }
